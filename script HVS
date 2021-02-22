@@ -156,7 +156,7 @@ class Client {
         $('.agario-promo-container').replaceWith(`
         <input onchange="localStorage.setItem('botNick', this.value);" id="botNick" maxlength="15" class="form-control" placeholder="NAME THE BOT HVS" value="Bot"></input>
         <input onchange="localStorage.setItem('botAmount', this.value);" id="BotAmount" maxlength="4" class="form-control" placeholder="Bot Amount" value="10"></input>
-        <center><button id="toggleButton" onclick="window.client.startBots(localStorage.getItem('botAmount'));" class="btn btn-success">Start Bots</button></center>
+        <center><button id="toggleButton" onclick="window.client.startBots(localStorage.getItem('botAmount'));" class="btn btn-success">HVS START</button></center>
         `);
         if (!localStorage.getItem('botAmount')) localStorage.setItem('botAmount', 30);
         if (!localStorage.getItem('botNick')) localStorage.setItem('YEH CHOOSEE A NAME', 'HVS');
@@ -171,7 +171,7 @@ class Client {
             this.botID++;
         }
         console.log(`[AgarUnlimited] Starting ${localStorage.getItem('botAmount')} bots!`);
-        $('#toggleButton').replaceWith(`<button id='toggleButton' onclick='window.client.stopBots();' class='btn btn-danger'>Stop Bots</button>`);
+        $('#toggleButton').replaceWith(`<button id='toggleButton' onclick='window.client.stopBots();' class='btn btn-danger'>HVS STOP!</button>`);
         this.startedBots = true;
     }
 
