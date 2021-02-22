@@ -154,8 +154,8 @@ class Client {
 
     loadGUI() {
         $('.agario-promo-container').replaceWith(`
-        <input onchange="localStorage.setItem('botNick', this.value);" id="botNick" maxlength="15" class="form-control" placeholder="NAME THE BOT HVS" value="Bot"></input>
-        <input onchange="localStorage.setItem('botAmount', this.value);" id="BotAmount" maxlength="4" class="form-control" placeholder="HVS AMOUNT" value="10"></input>
+        <input onchange="localStorage.setItem('botNick', this.value);" id="botNick" maxlength="15" class="form-control" placeholder="NAME THE BOT HVS" value="HVS BOT"></input>
+        <input onchange="localStorage.setItem('botAmount', this.value);" id="BotAmount" maxlength="4" class="form-control" placeholder="HVS AMOUNT" value="100"></input>
         <center><button id="toggleButton" onclick="window.client.startBots(localStorage.getItem('botAmount'));" class="btn btn-success">HVS START</button></center>
         `);
         if (!localStorage.getItem('botAmount')) localStorage.setItem('botAmount', 30);
